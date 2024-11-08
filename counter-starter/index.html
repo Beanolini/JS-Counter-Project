@@ -13,6 +13,7 @@
   <body>
     <div id="wrapper">
       <p id="number">0</p>
+      <input type="number" id="custom-step" placeholder="Enter a number" />
       <div id="button-wrapper">
         <input type="button" value="-1" id="subtraction" onclick="minus(-1)" />
         <input
@@ -22,6 +23,12 @@
           onclick="minus(-10)"
         />
         <input type="button" value="Reset" id="reset" onclick="reset()" />
+        <input
+          type="button"
+          value="Custom Add/Subtract"
+          id="custom"
+          onclick="customChange()"
+        />
       </div>
     </div>
     <script src="script.js"></script>
